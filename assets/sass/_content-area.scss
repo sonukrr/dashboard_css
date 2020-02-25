@@ -1,0 +1,162 @@
+#content-area {
+    margin-left: 280px;
+    padding: 10px 40px;
+    .heading {
+        h1 {
+            color: purple;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #1b1b1b;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+    }
+    .cards {
+        .card {
+            vertical-align: top;
+            background: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            width: 257px;
+            margin-right: 4rem;
+            padding-bottom: 20px;
+            .user-img {
+                background: url("https://randomuser.me/api/portraits/women/79.jpg") no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                width: 100px;
+                height: 100px;
+                margin: 10px auto;
+                border-radius: 50%;
+            }
+            .user-name {
+                color: purple;
+                text-align: center;
+                display: block;
+                font-weight: 380;
+            }
+            .user-title {
+                text-align: center;
+                display: block;
+                color: silver;
+            }
+            .edu_details {
+                margin-top: 1.5rem;
+                display: flex;
+                .education {
+                    color: rgb(192, 192, 192);
+                }
+                .schools {
+                    margin-left: 2rem;
+                    font-size: 0.8rem;
+                    .school {
+                        margin-left: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            h6 {
+                padding-left: 1rem;
+                font-size: 0.8rem;
+            }
+            .date {
+                display: block;
+                padding-left: 40px;
+                font-weight: bold;
+                border-left: 4px solid $greenNeon;
+            }
+            .interview-desc {
+                display: flex;
+                margin: 20px;
+                justify-content: center;
+                .job-type {
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    padding: 4px 4px;
+                    background: $orangeLight;
+                    text-align: center;
+                    color: white;
+                    font-size: smaller;
+                }
+                .interview-desc__details {
+                    margin-left: 10px;
+                    .interview_title {
+                        display: block;
+                        color: silver;
+                    }
+                    .designation {
+                        font-weight: 380;
+                    }
+                    .time {
+                        display: block;
+                        color: silver;
+                    }
+                }
+            }
+        }
+    }
+    table {
+        background: white;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+        border-collapse: collapse;
+        transition: all 0.5s ease-out;
+        thead {
+            background: $greyDark;
+            padding: 0;
+            margin: 0;
+            box-shadow: 0px 1px 2px $greyDark;
+            color: grey;
+            tr {
+                height: 3rem;
+                th {
+                    font-weight: 500;
+                    text-align: left;
+                    padding-left: 2rem;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-bottom: 1px solid $greyDark;
+                height: 3rem;
+                td {
+                    text-align: left;
+                    padding-left: 2rem;
+                    font-weight: 370;
+                    @for $i from 1 through 5 {
+                        .circle_icon#{$i} {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            font-size: small;
+                            padding: 5px 5px;
+                            color: white;
+                            margin-right: 10px;
+                            background: rgb(random(255), random(255), random(255));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col-md-4 {
+    width: (100/3) + 2%;
+    padding: 0 15px;
+}
+
+.hr {
+    margin: 5px 0px;
+    display: box;
+    height: 4px;
+    box-shadow: 0px 2px 2px rgba(128, 0, 128, 0.705);
+}
